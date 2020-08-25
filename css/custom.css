@@ -24,21 +24,35 @@
 
 .nav-main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 20px;
     font-weight: 500;
-    margin-left: 40px;
+    /* margin-left: 40px; */
+}
+
+.nav-main li:nth-child(1) {
+    margin-right: 15%;
+}
+.nav-main li:nth-child(2) {
+    margin-right: 15%;
+}
+.nav-main li:nth-child(3) {
+    margin-right: 15%;
+}
+.nav-main li:nth-child(4) {
+    margin-right: 15%;
 }
 
 .nav-main li:hover {
     text-decoration: underline;
     cursor: pointer;
+    text-shadow: 0 0 0.5px darkgray;
 }
 
 .main-content {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -48,10 +62,9 @@
 }
 
 .main-content h3 {
-    font-weight: 500;
-    font-size: 25px;
-    font-style: italic;
-    text-shadow: 1px 1px black;
+    font-size: 40px;
+    font-weight: 525;
+    text-shadow: 1.5px 1.5px 1.5px black;
 }
 
 .main-content img {
@@ -76,6 +89,7 @@
     font-weight: 500;
     padding: 45px 0 0;
 }
+
 
 
 @media screen and (max-width: 576px) {
@@ -127,6 +141,8 @@
     }
 }
 
+
+
 .menu_tabs {
     display: flex;
     flex-direction: row;
@@ -136,6 +152,7 @@
     margin-bottom: 15px;
     font-size: 28px;
     text-shadow: 1.5px 1.5px #424040;
+    align-items: center;
 }
 .menu_tabs li:nth-child(1) {
     margin-right: 20px;
@@ -144,10 +161,17 @@
 }
 .menu_tabs li:nth-child(2) {
     margin-right: 20px;
+    border-right: 2px solid white;
+    padding-right: 15px;
+}
+.menu_tabs li:nth-child(3) {
+    margin-right: 20px;
+    border-right: 2px solid white;
+    padding-right: 15px;
 }
 .menu_tabs li:nth-child(1) {
-    margin-left: 20px;
-}
+    margin-left: 5px;
+} 
 h1.menu_title {
     font-size: 60px;
     font-weight: 550; 
@@ -220,6 +244,22 @@ h1.contacts_title {
     margin-top: 5px;
 }
 
+.crop_tel_number {
+    margin-bottom: 0;
+}
+
+
+
+.menu_text p {
+    position: absolute;
+    top: 30px;
+    right: 160px;
+    font-weight: 600;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px black;
+    color: rgb(212, 44, 44);
+    transform: rotate(30deg);
+}
 
 .loader,
 .loader:before,
