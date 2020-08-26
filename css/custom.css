@@ -212,6 +212,15 @@ h1.contacts_title {
     transform: rotate(30deg);
 }
 
+.photo_by {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link_photografer {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 576px) {
     .main-slide {
         height: 50vh !important;
